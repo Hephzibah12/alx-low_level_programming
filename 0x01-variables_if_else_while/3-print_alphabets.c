@@ -1,4 +1,3 @@
-Task 3
 #include <stdio.h>
 #include <unistd.h>
 /**
@@ -21,8 +20,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-
-
-
-
-
