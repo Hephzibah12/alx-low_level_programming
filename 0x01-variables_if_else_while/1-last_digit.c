@@ -1,25 +1,29 @@
 #include <stdio.h>
-#include <unistd.h>
+#include <stdlib.h>
+#include <time.h>
 /**
  * main - Entry point
- * Description: prints numbers
+ * Description: checks on the last digit of the assigned var
  * Return: Always 0 (success)
  */
 int main(void)
 {
-	int i;
+	int n, m;
 
-	for (i = '0'; i <= '9' ; i++)
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	m = n % 10;
+	if (m > 5)
 	{
-		putchar(i);
-
-		if (i != '9')
-		{
-			putchar(',');
-			putchar(' ');
-		}
+		printf("Last digit of %d is %d and is greater than 5\n", n, m);
 	}
-
-	putchar('\n');
+	else if (m < 6 && m != 0)
+	{
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, m);
+	}
+	else
+	{
+		printf("Last digit of %d is %d and is 0\n", n, m);
+	}
 	return (0);
-}
+}}
