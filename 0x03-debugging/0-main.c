@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
-* main - tests function that prints if integer is positive or negative
-* Return: 0
-*/
+ * _isupper - Checks if a letter is UPPERCASE or not
+ * @a: The number to check
+ * Return: 1 if UPPERCASE letter or 0 for lowercase.
+ */
 
-int main(void)
+int _isupper(int a)
 {
-	int i;
-
-	i = 0;
-	positive_or_negative(i);
-
-	return (0);
+	if (a >= 65 && a <= 90)
+	{
+		return (1);
+	}
+	return (0);
 }
