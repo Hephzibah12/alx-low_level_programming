@@ -1,3 +1,3 @@
-This is my 0x03, C-Debugging project
+This is for my Debugging project
 
-This comprises of different tasks.
+This project consist of several tasks
