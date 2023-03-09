@@ -1,12 +1,17 @@
-#include <stdio.h>
+#include "main.h"
 
-/* function calls itself */
-void printstring(char *str)
+/**
+ * _puts_recursion - function line puts();
+ * @s: input
+ * Return: Always 0 (success)
+ */
+void _puts_recursion(char *s)
 {
-	printf("%s\n",str);
-}
-	int main()
-{
-	printstring("Hello, world!");
-	return 0;
+	if (*s)
+	{
+		_putchar(*s);
+		_puts_recursion(s + 1);
+	}
+	else
+		_putchar("\n");
 }
