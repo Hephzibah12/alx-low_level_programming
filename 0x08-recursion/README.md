@@ -1,4 +1,3 @@
-Recursion is the process of repeating items in a self-similar way. In programming languages, if a program allows you to call a function inside the same function, then it is called a recursive call of the function.
-
-ALX IS TEACHING US TO DO HARD THINGS ON OUR OWN
+0x08. C - Recursion
+ALX TEACHING US HARD THINGS, THE BEST SCHOOL EVER
 
